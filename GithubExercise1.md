@@ -1,7 +1,7 @@
 #Github Tutorial Part 1
 
 <p>Step 1: You want to fork an existing Github repository to create your own version of the same repository on your Github. </p>
-<p>To do this, you need to be logged onto your account on Github and go to my D3 repo <a href="https://github.com/jiwpark00/D3_files">here</a></p>
+<p>To do this, you need to be logged onto your account on Github and go to my D3 repo <a href="https://github.com/jiwpark00/D3_files">here to fork the repository (you just click the word "Fork" at the top right.</a></p>
 
 <p>Step 2: After you forked the D3 repo, go to the same D3 repo in your Github (so it should be called https://github.com/yourusername/D3_files). </p>
 
