@@ -7,7 +7,7 @@
 
 <p>Step 3: Open Powershell or Bash for Linux and go to the directory of your choice (maybe Documents or Desktop or something that is easily accessible).</p>
 
-<p>Step 4: Type this: "git clone your_D3_repo_URL" without quotations. You get the URL from Step 2. Once you do this, you now have a local files of the same repository.</p>
+<p>Step 4: Type this: "git clone your_D3_repo_URL" without quotations. You get the URL from Step 2 - the URL should look something like https://github.com/yourusername/D3_files.git. Once you do this, you now have a local files of the same repository.</p>
 
 <p>Step 5: Create a text file (like in Wordpad or Microsoft Word) called "I successfully forked and cloned my own repository." and save it in the same directory as your local file (ex. so in Documents or Desktop). </p>
 
