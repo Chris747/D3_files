@@ -11,7 +11,7 @@
 
 <p>Step 5: Create a text file (like in Wordpad or Microsoft Word) called "I successfully forked and cloned my own repository." and save it in the same directory as your local file (ex. so in Documents or Desktop). </p>
 
-<p>Step 6: Type "git add ." without quotations to stage the file, and then "git commit -m First-Commit" without quotations to make your commit. </p>
+<p>Step 6: Type "git add ." without quotations to stage the file, and then "git commit -m "First-Commit" " without outermost quotations (you want quotations around "First-Commit") to make your commit. </p>
 
 <p>Step 7: Type "git push origin master" and enter the username and password (it'll likely ask for this information) of your Github repository. </p>
 
