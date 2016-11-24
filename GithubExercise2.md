@@ -36,8 +36,10 @@ You are going to get a screen show up (this is Vi or Vim) with a comment already
 This should save the file and update your local repository.
 
 Step 7: Once you have done this, you now want to do two things:
+<br>
 A) You want to first save this changed version to your repository (i.e. your repository). Since you just made a commit, simply type
 "git push origin master" without quotations. This should do the job.
+<br>
 B) Now that you get the latest version, you want to show to others that you made this amazing change.
 For the sake of simplicity, let's stop this exercise by making you create another change to your DOCX file ("ForkPractice.docx")
 to include this progress, add it, and commit it and push it.
