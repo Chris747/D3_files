@@ -26,3 +26,14 @@ Briefly:
 3: You want to include some visualizations - this can be an image from the web, or D3 graph or Cytoscape graph. Javascript is already running, so if you need jQuery, you'll just need to copy that code in.
 <br>
 4: Once you are done, be sure to add, commit, and push to your repository.
+
+<br>
+Some userful resources to complete the exercise:
+
+https://www.tutorialspoint.com/html/html_basic_tags.htm
+
+http://www.cssbasics.com/introduction-to-css/
+
+https://www.tutorialspoint.com/html/html_images.htm
+
+https://www.dashingd3js.com/adding-an-svg-element
