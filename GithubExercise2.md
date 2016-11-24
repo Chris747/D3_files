@@ -2,7 +2,7 @@
 
 <em>This requires that you have successfully completed the first Github exercise. Please see [Part 1](https://github.com/jiwpark00/D3_files/blob/master/GithubExercise1.md)</em>
 
-Step 1: Now that you know how to fork an existing repository and make changes, you are going to first pull from this branch.
+Step 1: Now that you know how to fork an existing repository and make changes, you are going to first pull from this original repository.
 
 Step 2: There are two changes in this repository. We have a new markdown document called GithubExercise2.md (this is what you are reading now)
 as well as the fact that the first Github exercise now contains a big Github icon.
