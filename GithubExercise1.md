@@ -17,4 +17,8 @@
 
 <p>Step 8: Once you completed this step, email me. </p>
 
+<h1>This wasn't there before!</h1>
+![Image of Github](https://assets-cdn.github.com/images/modules/logos_page/Octocat.png)
+
 </body>
+
