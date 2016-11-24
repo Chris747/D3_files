@@ -45,3 +45,7 @@ For the sake of simplicity, let's stop this exercise by making you create anothe
 to include this progress, add it, and commit it and push it.
 
 Step 8: Once you do these steps, you can email me.
+
+Step 9: (Not to-do but just a diagram for reference) This is essentially what many of Git commands boil down to:
+
+![Oliver Steele's diagram](http://assets.osteele.com/images/2008/git-transport.png)
