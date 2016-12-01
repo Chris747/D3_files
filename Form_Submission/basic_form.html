@@ -38,12 +38,12 @@
 	    box-sizing: border-box;
 
 	    /* To harmonize the look & feel of text field border */
-	    border: 1px solid #999;
+	    border: 1px solid red;
 	}
 
 	input:focus, textarea:focus {
 	    /* To give a little highlight on active elements */
-	    border-color: #000;
+	    border-color: blue;
 	}
 
 	textarea {
@@ -73,7 +73,7 @@
 <body>
 
 	<!-- TO DO 2: Add a little blurb (general) about why we need a form submission. Be creative. -->
-
+<p> Hello! Please fill in your information and we  will get back with your Morpheome results. Thank you and have a great  day! </p>
 <form method="post" onSubmit="alert('Thank you for your feedback.');" >
     <div>
         <label for="name">Name:</label>
@@ -89,9 +89,10 @@
     </div>
     
     <div class="button">
-        <button type="submit">Send your message</button>
+        <button type="submit">Submit</button>
     </div>
 
     <!-- TO DO 3: Include some visuals. This can be an image, D3 visualizations (javascript is already running; if you need, jQuery, you'll need to include that above), etc. -->
 </form>
+	<img src="https://sites.wustl.edu/publicaffairs/files/2015/07/Washington_University_Monogram_Open1c200-01-17zuofc.png" style="width:200px;padding:5px 10px; center">
 </body>
