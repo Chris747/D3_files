@@ -1,98 +1,173 @@
 <!DOCTYPE html>
 <head>
 <script src="https://cdn.optimizely.com/js/120055048.js"></script>
-	
-	<!-- TO DO 1 Add some colors to fonts, and maybe even vary the font between form submission and text below.-->
-
 	<style>
-
+		#form {
+			float:left;
+			width:50%;
+		}
+		
+		#graph {
+			float:right;
+			width:50%;
+		}
 		form {
-	    /*Just to center the form on the page */
-	    margin: 0 auto;
-	    width: 400px;
-	    /* To see the outline of the form */
-	    padding: 1em;
-	    border: 1px solid #CCC;
-	    border-radius: 1em;
-	}
+			/*Just to center the form on the page */
+			margin: 0 auto;
+			width: 400px;
+			/* To see the outline of the form */
+			padding: 1em;
+			border: 1px solid #CCC;
+			border-radius: 1em;
+		}
 
 		form div + div {
-	    margin-top: 1em;
-	}
+			margin-top: 1em;
+		}
 
 		label {
-	    /* To make sure that all labels have the same size and are properly aligned */
-	    display: inline-block;
-	    width: 90px;
-	    text-align: right;
-	}
+			/* To make sure that all labels have the same size and are properly aligned */
+			display: inline-block;
+			width: 90px;
+			text-align: right;
+		}
 
-	input, textarea {
-	    /* To make sure that all text fields have the same font settings
-	       By default, textareas have a monospace font */
-	    font: 1em sans-serif;
+		input, textarea {
+			/* To make sure that all text fields have the same font settings
+			By default, textareas have a monospace font */
+			font: 1em sans-serif;
+	
+			/* To give the same size to all text field */
+			width: 300px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
 
-	    /* To give the same size to all text field */
-	    width: 300px;
-	    -moz-box-sizing: border-box;
-	    box-sizing: border-box;
+			/* To harmonize the look & feel of text field border */
+			border: 1px solid black;
+		}
 
-	    /* To harmonize the look & feel of text field border */
-	    border: 1px solid red;
-	}
+		input:focus, textarea:focus {
+			/* To give a little highlight on active elements */
+			border-color: green;
+		}
 
-	input:focus, textarea:focus {
-	    /* To give a little highlight on active elements */
-	    border-color: blue;
-	}
+		textarea {
+			/* To properly align multiline text fields with their labels */
+			vertical-align: top;
+	
+			/* To give enough room to type some text */
+			height: 5em;
 
-	textarea {
-	    /* To properly align multiline text fields with their labels */
-	    vertical-align: top;
+			/* To allow users to resize any textarea vertically
+			It does not work on all browsers */
+			resize: vertical;
+		}
 
-	    /* To give enough room to type some text */
-	    height: 5em;
-
-	    /* To allow users to resize any textarea vertically
-	       It does not work on all browsers */
-	    resize: vertical;
-	}
-
-	.button {
-	    /* To position the buttons to the same position of the text fields */
-	    padding-left: 90px; /* same size as the label elements */
-	}
-	button {
-	    /* This extra margin represent roughly the same space as the space
-	       between the labels and their text fields */
-	    margin-left: .5em;
-	}
+		.button {
+			/* To position the buttons to the same position of the text fields */
+			padding-left: 90px; /* same size as the label elements */
+		}
+		
+		button {
+			/* This extra margin represent roughly the same space as the space
+			between the labels and their text fields */
+			margin-left: .5em;
+		}	
 
 	</style>
 </head>
+<div id="container">
+<div id="form">
 <body>
-
-	<!-- TO DO 2: Add a little blurb (general) about why we need a form submission. Be creative. -->
-<p> Hello! Please fill in your information and we  will get back with your Morpheome results. Thank you and have a great  day! </p>
-<form method="post" onSubmit="alert('Thank you for your feedback.');" >
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" />
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail" />
-    </div>
-    <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
+	<p style="text-align: center"> Hello and welcome to Morpheome. Please fill out this form in order to enter our</p> 
+	<p style="text-align: center">email list for receiving information about Morpheome. Thank you and have a great  day! </p>
+	<form method="post" onSubmit="alert('Thank you for filling out the form. We will get back to you soon!');" >
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="user_name" />
+		</div>
+		<div>
+			<label for="mail">E-mail:</label>
+			<input type="email" id="mail" name="user_mail" />
+		</div>
+		<div>
+			<label for="msg">How did you hear about us?</label>
+			<textarea id="msg" name="user_message"></textarea>
+		</div>
     
-    <div class="button">
-        <button type="submit">Submit</button>
-    </div>
+		<div class="button">
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+	
+	<center><img src="https://sites.wustl.edu/publicaffairs/files/2015/07/Washington_University_Monogram_Open1c200-01-17zuofc.png" style="width:200px;padding:5px 10px"></center>
+</div>
+<div id="graph">	
+	<p style="text-align: center"> Force Graph of how the Top 10 genes link to orphan genes </p>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script>
 
-    <!-- TO DO 3: Include some visuals. This can be an image, D3 visualizations (javascript is already running; if you need, jQuery, you'll need to include that above), etc. -->
-</form>
-	<img src="https://sites.wustl.edu/publicaffairs/files/2015/07/Washington_University_Monogram_Open1c200-01-17zuofc.png" style="width:200px;padding:5px 10px; center">
+		var width = 700,
+			height = 700;
+
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height);
+
+		var force = d3.layout.force()
+			.size([width, height]);
+
+		d3.csv("https://raw.githubusercontent.com/Chris747/hello-world/master/ForceGraphTrial3Data", function(error, links) {
+			if (error) throw error;
+
+			var nodesByName = {};
+
+		// Create nodes for each unique source and target.
+		links.forEach(function(link) {
+			link.source = nodeByName(link.source);
+			link.target = nodeByName(link.target);
+		});
+
+		// Extract the array of nodes from the map by name.
+		var nodes = d3.values(nodesByName);
+
+		// Create the link lines.
+		var link = svg.selectAll(".link")
+			.data(links)
+			.enter().append("line")
+			.attr("class", "link");
+
+		// Create the node circles.
+		var node = svg.selectAll(".node")
+			.data(nodes)
+			.enter().append("circle")
+			.attr("class", "node")
+			.attr("r", 4.5)
+			.call(force.drag);
+			
+		// Start the force layout.
+		force
+			.nodes(nodes)
+			.links(links)
+			.on("tick", tick)
+			.start();
+			
+
+		function tick() {
+			link.attr("x1", function(d) { return d.source.x; })
+				.attr("y1", function(d) { return d.source.y; })
+				.attr("x2", function(d) { return d.target.x; })
+				.attr("y2", function(d) { return d.target.y; });
+
+			node.attr("cx", function(d) { return d.x; })
+				.attr("cy", function(d) { return d.y; });
+		}
+
+		function nodeByName(name) {
+			return nodesByName[name] || (nodesByName[name] = {name: name});
+		}
+		});
+	</script>
+</div>
+</div>
 </body>
